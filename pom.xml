@@ -11,7 +11,8 @@
     <groupId>com.airocov</groupId>
     <artifactId>dockerdemo1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <!--<packaging>jar</packaging>-->
+    <packaging>war</packaging>
     <name>dockerdemo1</name>
     <description>Demo project for Spring Boot</description>
 
@@ -41,6 +42,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--打包时用 -->
+        <!--因配置外部TOMCAT 而配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
